@@ -5,17 +5,16 @@ using UnityEngine;
 public class Scriptbuenisimo : MonoBehaviour
 {
     public int cant = 0;
-    public float minX;
-    public float maxX;
+    public int i = 0;
+
     public bool autoGenerate;
     public float freq;
-    public int min = 0;
-    public int max = 2;
-    public GameObject prefab;
-    public Vector3 newPosition;
-    public GameObject fuente;
 
-   
+    public GameObject[] Prefabs;
+
+    public int Random_Number;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,19 +35,12 @@ public class Scriptbuenisimo : MonoBehaviour
     }
     public void Clone()
     {
-        int random = Random.Range(min, max);
-        float randomX = Random.Range(minX, maxX);
-        newPosition = new Vector3(randomX, newPosition.y, newPosition.z);
-
-
-        if (random == 1)
+        if (i > cant)
         {
-            Instantiate(prefab, newPosition, Quaternion.identity);
+            Random_Number = Random.Range(0, Prefabs.Length);
 
-        }
-        else if (random == 0)
-        {
-            Instantiate(fuente, newPosition, Quaternion.identity);
+            Instantiate(Prefabs[Random_Number], new Vector3(Random.Range(-140, 450), 260, 400), Prefabs[Random_Number].transform.rotation);
+            i++;
         }
     }
 }

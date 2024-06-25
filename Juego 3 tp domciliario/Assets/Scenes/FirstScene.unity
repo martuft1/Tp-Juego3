@@ -125,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 64e8bf4141599314fb345fc80cefaf33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 289
+      value: -478
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 64e8bf4141599314fb345fc80cefaf33, type: 3}
       propertyPath: m_LocalPosition.y
@@ -202,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 005ac47ac20dda44c9d954694d73dc60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.550194
+      value: -737.4498
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 005ac47ac20dda44c9d954694d73dc60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -479,15 +479,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cant: 0
-  minX: 0
-  maxX: 0
+  i: 0
   autoGenerate: 0
   freq: 0
-  min: 0
-  max: 2
-  prefab: {fileID: 0}
-  newPosition: {x: 0, y: 0, z: 0}
-  fuente: {fileID: 0}
+  Prefabs: []
+  Random_Number: 0
 --- !u!1 &597515605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 64e8bf4141599314fb345fc80cefaf33,
@@ -507,15 +503,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cant: 0
-  minX: 0
-  maxX: 0
+  i: 0
   autoGenerate: 0
   freq: 0
-  min: 0
-  max: 2
-  prefab: {fileID: 0}
-  newPosition: {x: 0, y: 0, z: 0}
-  fuente: {fileID: 0}
+  Prefabs: []
+  Random_Number: 0
 --- !u!1 &627648746
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,13 +850,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: fuentecita
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 702df017bdae9b4499ffb566fa86286c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -173.8
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 702df017bdae9b4499ffb566fa86286c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 66
+      value: 481
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 702df017bdae9b4499ffb566fa86286c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 204.3
+      value: 207
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 702df017bdae9b4499ffb566fa86286c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -933,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0ebf7e06d6aa7a4ba3627c88719b832, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 131
+      value: -636
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0ebf7e06d6aa7a4ba3627c88719b832, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1110,15 +1106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cant: 0
-  minX: 0
-  maxX: 0
+  i: 0
   autoGenerate: 0
   freq: 0
-  min: 0
-  max: 2
-  prefab: {fileID: 0}
-  newPosition: {x: 0, y: 0, z: 0}
-  fuente: {fileID: 0}
+  Prefabs: []
+  Random_Number: 0
 --- !u!1 &1522439999 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 702df017bdae9b4499ffb566fa86286c,
@@ -1167,15 +1159,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cant: 0
-  minX: 0
-  maxX: 0
+  i: 0
   autoGenerate: 0
   freq: 0
-  min: 0
-  max: 2
-  prefab: {fileID: 0}
-  newPosition: {x: 0, y: 0, z: 0}
-  fuente: {fileID: 0}
+  Prefabs: []
+  Random_Number: 0
 --- !u!1 &1571387011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,16 +1275,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6738d1d849326046997cde69ad107a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cant: 0
-  minX: 0
-  maxX: 0
-  autoGenerate: 0
-  freq: 0
-  min: 0
-  max: 2
-  prefab: {fileID: 0}
-  newPosition: {x: 0, y: 0, z: 0}
-  fuente: {fileID: 0}
+  cant: 10
+  i: 0
+  autoGenerate: 1
+  freq: 1
+  Prefabs:
+  - {fileID: 1159705726}
+  - {fileID: 568381851}
+  - {fileID: 1522439999}
+  - {fileID: 1433476273}
+  Random_Number: 0
 --- !u!4 &2144133077
 Transform:
   m_ObjectHideFlags: 0
