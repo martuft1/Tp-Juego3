@@ -15,26 +15,26 @@ public class Scriptbuenisimo : MonoBehaviour
     public Vector3 newPosition;
     public GameObject fuente;
 
-    public GameObject[]
+   
     // Start is called before the first frame update
     void Start()
     {
         if (autoGenerate)
         {
-            InvokeRepeating(nameof(Clonefuente), 0, freq);
+            InvokeRepeating(nameof(Clone), 0, freq);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     private void OnCollisionEnter(Collision collision)
     {
         cant++;
     }
-    public void Clonefuente()
+    public void Clone()
     {
         int random = Random.Range(min, max);
         float randomX = Random.Range(minX, maxX);
