@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Scriptbuenisimo : MonoBehaviour
 {
@@ -14,10 +15,11 @@ public class Scriptbuenisimo : MonoBehaviour
 
     public int Random_Number;
 
-
+    public InputField;
     // Start is called before the first frame update
     void Start()
     {
+        cant = Random.Range(1, 11);
         if (autoGenerate)
         {
             InvokeRepeating(nameof(Clone), 0, freq);
@@ -41,6 +43,14 @@ public class Scriptbuenisimo : MonoBehaviour
 
             Instantiate(Prefabs[Random_Number], new Vector3(Random.Range(-140, 450), 260, 400), Prefabs[Random_Number].transform.rotation);
             i++;
+        }
+    }
+
+    void ButtonRespopnderClick() 
+    {
+        if ( == cant) 
+        { 
+        
         }
     }
 }
