@@ -15,7 +15,7 @@ public class Scriptbuenisimo : MonoBehaviour
 
     public int Random_Number;
 
-    public InputField;
+    public InputField input;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,9 +48,19 @@ public class Scriptbuenisimo : MonoBehaviour
 
     void ButtonRespopnderClick() 
     {
-        if ( == cant) 
-        { 
-        
+        convert input 
+        if (input.text == cant)
+        {
+            Debug.Log("Ganaste");
         }
+        else if (input == );
+        {
+            Debug.Log("debe ingresar un resultado");
+        }
+        else
+        {
+            Debug.Log("perdiste");
+        }
+           
     }
 }
